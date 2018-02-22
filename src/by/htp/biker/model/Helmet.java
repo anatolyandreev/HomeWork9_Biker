@@ -1,10 +1,12 @@
 package by.htp.biker.model;
 
 public class Helmet extends Equipment {
+	
+	private HelmetType helmetType;
 
-	public Helmet(int size, int weight, int price) {
+	public Helmet(int size, int weight, int price, String helmetType) {
 		super(size, weight, price);
-		// TODO Auto-generated constructor stub
+		this.helmetType = HelmetType.valueOf(helmetType);
 	}
 
 }

@@ -2,9 +2,13 @@ package by.htp.biker.model;
 
 public class Jacket extends Equipment {
 
-	public Jacket(int size, int weight, int price) {
+	boolean hasLiner;
+	JacketMaterial jacketMaterial;
+	
+	public Jacket(int size, int weight, int price, boolean hasLiner, String jacketMaterial) {
 		super(size, weight, price);
-		// TODO Auto-generated constructor stub
+		this.hasLiner = hasLiner;
+		this.jacketMaterial = JacketMaterial.valueOf(jacketMaterial);
 	}
 
 }
