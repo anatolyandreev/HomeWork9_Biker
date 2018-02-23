@@ -28,6 +28,7 @@ public class MainApp {
 		motoMan.printEquipment("weight");
 		System.out.println("============================= \n");
 		
+		// search for Equipment elements in given price range
 		motoMan.searchEquipElementByPriceRange(30, 200);
 	}
 }

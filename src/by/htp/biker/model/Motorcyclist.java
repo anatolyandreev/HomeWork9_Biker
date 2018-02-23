@@ -8,14 +8,17 @@ public class Motorcyclist implements EquipmentOperations {
 	private Jacket jacket;
 	private Pants pants;
 	private Equipment[] equip;
-
+	
+	// overloaded constuctor
 	public Motorcyclist() {
 	};
-
+	
+	// overloaded constuctor
 	public Motorcyclist(Equipment[] equip) {
 		this.equip = equip;
 	}
 
+	// overloaded constuctor
 	public Motorcyclist(Gloves gloves, Helmet helmet, Jacket jacket, Pants pants) {
 		this.gloves = gloves;
 		this.helmet = helmet;

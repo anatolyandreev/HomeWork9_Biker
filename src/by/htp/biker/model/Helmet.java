@@ -6,7 +6,9 @@ public class Helmet extends Equipment {
 
 	public Helmet(int size, int weight, int price, String helmetType) {
 		super(size, weight, price);
+		try {
 		this.helmetType = HelmetType.valueOf(helmetType);
+		} catch (IllegalArgumentException e) {System.out.println("Invalid parameter for helmet type, should be 'FOR_THIRDS' or 'INTEGRAL' OR 'MODULAR'");}
 	}
 	
 	// just prints the type of equip
