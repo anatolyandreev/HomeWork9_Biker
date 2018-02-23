@@ -16,7 +16,16 @@ public class Gloves extends Equipment {
 	public void setShort(boolean isShort) {
 		this.isShort = isShort;
 	}
-
 	
+	// just prints the type of equip
+	@Override
+	public void printEquipName() {
+		System.out.print("Gloves");
+	}
+	
+	@Override
+	public String getEquipName(){
+		return "Gloves";
+	}
 	
 }

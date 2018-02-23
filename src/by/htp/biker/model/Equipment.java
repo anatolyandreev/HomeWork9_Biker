@@ -1,10 +1,16 @@
 package by.htp.biker.model;
 
-public class Equipment {
+public abstract class Equipment {
 
 	private int price;
 	private int weight;
 	private int sizeNum;
+	
+	public Equipment(int size, int weight, int price) {
+		this.sizeNum = size;
+		this.weight = weight;
+		this.price = price;
+	}
 	
 	public int getPrice() {
 		return price;
@@ -29,11 +35,13 @@ public class Equipment {
 	public void setSize(int size) {
 		this.sizeNum = size;
 	}
-
-	public Equipment(int size, int weight, int price) {
-		this.sizeNum = size;
-		this.weight = weight;
-		this.price = price;
+	
+	public void printEquipName() {
+		System.out.print("no equip name, this is parent class' object");
+	}
+	
+	public String getEquipName(){
+		return "no equip name, this is parent calss' object";
 	}
 
 }

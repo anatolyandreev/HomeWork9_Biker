@@ -8,5 +8,15 @@ public class Helmet extends Equipment {
 		super(size, weight, price);
 		this.helmetType = HelmetType.valueOf(helmetType);
 	}
+	
+	// just prints the type of equip
+	@Override
+	public void printEquipName() {
+		System.out.print("Helmet");
+	}
 
+	@Override
+	public String getEquipName(){
+		return "Helmet";
+	}
 }

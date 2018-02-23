@@ -10,5 +10,16 @@ public class Pants extends Equipment {
 		this.hasLiner = hasLiner;
 		this.isWaterProof = isWaterProof;
 	}
+	
+	// just prints the type of equip
+	@Override
+	public void printEquipName() {
+		System.out.print("Pants");
+	}
+	
+	@Override
+	public String getEquipName(){
+		return "Pants";
+	}
 
 }

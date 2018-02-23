@@ -10,5 +10,16 @@ public class Jacket extends Equipment {
 		this.hasLiner = hasLiner;
 		this.jacketMaterial = JacketMaterial.valueOf(jacketMaterial);
 	}
+	
+	// just prints the type of equip
+	@Override
+	public void printEquipName() {
+		System.out.print("Jacket");
+	}
+	
+	@Override
+	public String getEquipName(){
+		return "Jacket";
+	}
 
 }
