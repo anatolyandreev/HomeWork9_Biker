@@ -1,5 +1,7 @@
 package by.htp.biker.model;
 
+import by.htp.biker.model.clothes.Equipment;
+
 public class Pants extends Equipment {
 
 	boolean isWaterProof;
@@ -9,6 +11,7 @@ public class Pants extends Equipment {
 		super(size, weight, price);
 		this.hasLiner = hasLiner;
 		this.isWaterProof = isWaterProof;
+		counter++;
 	}
 	
 	// just prints the type of equip
